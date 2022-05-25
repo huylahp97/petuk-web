@@ -5,7 +5,7 @@ import IMG1 from '../../../assets/images/header/girl-1.png'
 import IMG2 from '../../../assets/images/header/girl-2.png'
 import IMG3 from '../../../assets/images/header/girl-3.png'
 
-const listImage = [
+const listImage : {id: number, img: string}[] = [
     {
         id: 1,
         img: IMG1,

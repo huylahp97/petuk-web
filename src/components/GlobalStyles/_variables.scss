@@ -7,4 +7,6 @@ $primaryColor: #FFC703;
 $primaryColorAlt: #FFE27C;
 $primaryLinearColor: linear-gradient(180deg, $primaryColorAlt 0%, $primaryColor 100%);
 $primaryLinearColorAlt: linear-gradient(90deg, $bgColorAlt 0%, $bgColor 94.25%);
+
 $containerWidthLg: 90%;
+$transition: all 400ms ease;

@@ -1,3 +1,6 @@
+@use '../../GlobalStyles/variables';
+
+
 .imgWrap {
     position: relative;
     width: 100%;
@@ -8,5 +11,42 @@
         right: -7rem;
         height: 68rem;
         z-index: 0;
+    }
+    .bubbleTalk {
+        position: absolute;
+        top: 20rem;
+        left: 7rem;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        font-weight: 300;
+        padding: 2rem;
+        background-color: rgba(255, 255, 255, 0.25);
+        border-radius: 1rem;
+        animation: MoveUpDown 3s infinite linear;
+        user-select: none;
+
+        div {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        &::before {
+            content: "";
+            border-color: rgba(255, 255, 255, 0.25) transparent transparent transparent;
+            border-width: 16px 20px;
+            border-style: solid;
+            position: absolute;
+            bottom: -3.2rem;
+        }
+    }
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2rem);
     }
 }

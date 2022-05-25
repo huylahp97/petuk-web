@@ -7,6 +7,9 @@ const ContentRight: React.FC = (): JSX.Element => {
         <>
             <div className={styles.imgWrap}>
                 <img src={happyLady} alt="Happy" />
+                <div className={styles.bubbleTalk}>
+                    Try our best <div>Salad</div>
+                </div>
             </div>
         </>
     )
