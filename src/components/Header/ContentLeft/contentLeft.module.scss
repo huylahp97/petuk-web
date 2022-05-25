@@ -1,0 +1,66 @@
+@use '../../GlobalStyles/variables';
+
+
+.slogan {
+    width: 110%;
+    h2 {
+        font-size: 7rem;
+        line-height: 7rem;
+
+        span {
+            color: variables.$primaryColor;
+        }
+    }
+}
+
+.description {
+    width: 75%;
+    p {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+
+.btnWrap {
+    display: flex;
+    gap: 2rem;
+    
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 18rem;
+        padding: 1.3rem 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: variables.$whiteColor;
+        background-color: variables.$bgColorAlt;
+        border-radius: 5rem;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.9;
+        }
+
+        i {
+            display: flex;
+            font-size: 1.8rem;
+            margin-right: 1rem;
+            color: variables.$bgColor;
+            padding: .5rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            box-shadow: 0 0 1rem 0.3rem variables.$bgColorAlt;
+            filter: blur(0.06rem)
+        }
+
+
+
+
+    }
+    
+    .primaryBtn {
+        color: variables.$blackColorAlt;
+        background: variables.$primaryLinearColor;
+    }
+}

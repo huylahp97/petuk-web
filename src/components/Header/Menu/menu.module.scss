@@ -1,0 +1,61 @@
+@use '../../GlobalStyles/variables';
+
+.ulMenu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width:100%;
+    gap: 4rem;
+    height: 100%;
+
+    li {
+        position: relative;
+    }
+
+    a {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .menuUnderline {
+        display: none;
+        width: 50%;
+        height: 2px;
+        background-color: variables.$primaryColor;
+        position: absolute;
+        border-radius: .5rem;
+        left: 0;
+        right: 0;
+        margin: 2px auto 0 auto;
+    }
+
+    .menuBtn:hover {
+        color: variables.$primaryColor;
+        & + .menuUnderline {
+            display: block;
+        }
+    }
+    
+
+    .signInBtn {
+        background: variables.$primaryLinearColor;
+        color: variables.$blackColorAlt;
+        padding: 0.8rem 1.6rem;
+        border-radius: 0.4rem;
+        display: flex;
+        align-items: center;
+        &:hover {
+            opacity: 0.9;
+            color: variables.$blackColor;
+        }
+
+        i {
+            display: flex;
+            margin-left: .6rem;
+            align-items: center;
+        }
+
+        
+    }
+}
+

@@ -1,0 +1,35 @@
+@use './variables';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+
+
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 2rem;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: variables.$bgColor;
+    color: variables.$whiteColor;
+    & > * {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+a:any-link {
+    color: variables.$whiteColor;
+}
