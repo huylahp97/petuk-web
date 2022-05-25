@@ -1,0 +1,110 @@
+@use '../../GlobalStyles/variables';
+
+.reviewsAndRates {
+    display: flex;
+    height: 15rem;
+    position: relative;
+    background-color: white;
+    z-index: 2;
+    
+    article {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        position: relative;
+
+        
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: url(../../../assets/images/header/pattern-2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 0;
+        }
+
+        div {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+    }
+
+    .reviews {
+        flex: 38;
+        background: linear-gradient(90.34deg, #A177B6 -90.36%, #53067A 93.99%);
+        line-height: 3rem;
+        
+        h3 {
+            font-size: 3rem;
+            font-weight: 500;
+        }
+        p {
+            font-size: 2rem;
+        }
+    }
+
+    .customers {
+        flex: 37;
+        background: linear-gradient(90.41deg, #A177B6 -65.01%, #53067A 93.94%);
+
+        div {
+            height: 100%;
+            align-items: center;
+        }
+
+        img {
+            border-radius: 50%;
+            border: .4rem solid variables.$whiteColor;
+            width: 7.5rem;
+            aspect-ratio: 1/1;
+            margin: 0 -6.5rem;
+
+            &:hover {
+                border-color: variables.$primaryColor;
+                width: 9rem;
+                cursor: pointer;
+            }
+        }
+
+
+    }
+    .rates {
+        flex: 25;
+        background: linear-gradient(90.05deg, #A177B6 -130.92%, #53067A 94.21%);
+        user-select: none;
+        div {
+            i {
+                display: flex;
+                align-items: center;
+                font-size: 4rem;
+                color: variables.$primaryColor;
+                animation: rotation 5s infinite linear;
+            }
+
+            span {
+                margin-left: 1rem;
+                font-size: 3rem;
+                line-height: 3rem;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+

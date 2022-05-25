@@ -33,3 +33,8 @@ body {
 a:any-link {
     color: variables.$whiteColor;
 }
+
+h4 {
+    color: variables.$primaryColor;
+    font-size: 2rem;
+}

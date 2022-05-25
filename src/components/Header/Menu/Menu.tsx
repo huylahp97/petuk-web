@@ -12,8 +12,8 @@ const Menu: React.FC = (): JSX.Element => {
     ]
     return (
         <ul className={styles.ulMenu}>
-            {menu.map(item => (
-                <li>
+            {menu.map((item, index) => (
+                <li key={index}>
                     <a className={styles.menuBtn} href='#'>{item}</a>
                     <div className={styles.menuUnderline}></div>
                 </li>
