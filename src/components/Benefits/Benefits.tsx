@@ -2,6 +2,7 @@ import React from 'react'
 import clsx from 'clsx'
 
 import styles from './benefits.module.scss'
+import BenefitsContent from './BenefitsContent/BenefitsContent'
 
 const Benefits = () => {
     return (
@@ -14,7 +15,9 @@ const Benefits = () => {
                 <section className={styles.description}>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor scelerisque nisl .</p>
                 </section>
-                <section className={styles.benefitsContent}></section>
+                <section className={styles.benefitsContent}>
+                    <BenefitsContent />
+                </section>
             </div>
         </div>
     )

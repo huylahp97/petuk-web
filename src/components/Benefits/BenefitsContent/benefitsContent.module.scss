@@ -1,0 +1,112 @@
+@use '../../GlobalStyles/variables';
+
+.benefitsWrap {
+    display: flex;
+    width: 100%;
+}
+
+.benefitsPic {
+    width: 100%;
+    flex: 45;
+
+    .picWrap {
+        position: relative;
+        margin-top: 2rem;
+
+        width: 42rem;
+        height: 50rem;
+        border-radius: 0 0 50% 50%;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            height: 100%;
+            top: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 20;
+        }
+
+        .circleBg {
+            position: absolute;
+            height: 76%;
+            aspect-ratio: 1/1;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: variables.$primaryColor;
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        .circleBg2 {
+            position: absolute;
+            height: 90%;
+            aspect-ratio: 1/1;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-55%);
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            z-index: 11;
+        }
+    }
+}
+
+
+.benefitsList {
+    flex: 55;
+    display: grid;
+    grid-template-columns: repeat(2, 25rem);
+    gap: 3rem;
+    z-index: 1;
+    margin-top: 7rem;
+    justify-content: end;
+}
+
+.benefitsItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: variables.$itemColor;
+    text-align: center;
+    border: .1rem solid variables.$bgColorAlt;
+    border-radius: 2rem;
+    user-select: none;
+    transition: variables.$transition;
+
+    &:hover {
+        background: variables.$primaryLinearColor;
+        color: variables.$blackColorAlt;
+        
+        .itemImg {
+            background: rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    .itemImg {
+        display: flex;
+        aspect-ratio: 1/1;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2rem;
+        img {
+            margin: 1rem;
+        }
+    }
+
+    h5 {
+        font-size: 2rem;
+        line-height: 3rem;
+        margin: .6rem;
+    }
+
+    .itemDesc {
+        width: 80%;
+        p {
+            font-size: 1.3rem;
+            font-family: 300;
+        }
+    }
+}
