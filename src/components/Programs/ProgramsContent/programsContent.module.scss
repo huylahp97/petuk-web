@@ -1,0 +1,100 @@
+@use '../../GlobalStyles/variables';
+
+.listWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+.program {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 4rem;
+    border: .01rem solid variables.$bgColorAlt;
+    box-shadow: 0px 4px 91px rgba(115, 1, 177, 0.15);
+    min-width: 25rem;
+    max-width: 31rem;
+    width: 100%;
+    aspect-ratio: 1/1;
+    user-select: none;
+    margin-top: 12rem;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        background: variables.$primaryLinearColor;
+        color: variables.$blackColorAlt;
+        height: 38rem;
+        margin-top: 3rem;
+        
+        .itemWrap {
+            div {
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        a {
+            color: variables.$blackColorAlt;
+
+        }
+
+    }
+    
+    .itemWrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        & > * {
+            margin-top: 2rem;
+        }
+
+        div {
+            min-width: 8rem;
+            aspect-ratio: 1/1;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 2rem;
+            filter: blur(.06rem);
+
+            img {
+                width: 5rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        
+        h5 {
+            font-size: 2.5rem;
+            line-height: 3rem;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1.5rem;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        a {
+            font-size: 1.5rem;
+            font-weight: 500;
+            display: flex;
+
+            i {
+                display: flex;
+                align-items: center;
+                font-size: 2rem;
+            }
+
+            &:hover {
+                color: variables.$blackColor;
+                text-decoration: underline;
+            }
+        }
+    }
+}

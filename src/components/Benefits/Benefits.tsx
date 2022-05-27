@@ -1,27 +1,23 @@
-import React from 'react';
-import clsx from 'clsx';
+import React from 'react'
+import clsx from 'clsx'
 
-import styles from './programs.module.scss';
-import ProgramsContent from './ProgramsContent/ProgramsContent';
+import styles from './benefits.module.scss'
 
-const Programs:React.FC = (): JSX.Element => {
+const Benefits = () => {
     return (
-        <div className={clsx(styles.programsWrap, 'wrap')}>
+        <div className={clsx(styles.benefitsWrap, 'wrap')}>
             <div className={clsx(styles.container, 'container')}>
                 <section className={styles.title}>
-                    <h4>Our Best Programs</h4>
+                    <h4>Our Value Top Help You</h4>
                     <div className={clsx(styles.titleUnderline, 'underline')}></div>
                 </section>
                 <section className={styles.description}>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor scelerisque nisl .</p>
                 </section>
-                <section className={styles.programsContent}>
-                    <ProgramsContent />
-                </section>
+                <section className={styles.benefitsContent}></section>
             </div>
-            
         </div>
     )
 }
 
-export default Programs;
+export default Benefits

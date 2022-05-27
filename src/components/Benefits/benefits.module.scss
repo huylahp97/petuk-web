@@ -1,0 +1,38 @@
+.benefitsWrap {
+    background: linear-gradient(62.08deg, #53067A 1.07%, #A177B6 173.93%);
+    position: relative;
+    
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url(../../assets/images/benefits/pattern.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 0;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleUnderline {
+    align-self: center;
+    margin: 1rem auto 0 auto;
+}
+
+.description {
+    font-size: 2.8rem;
+    line-height: 3.3rem;
+    text-align: center;
+    font-weight: 300;
+    width: 65%;
+    margin-top: 2rem;
+}

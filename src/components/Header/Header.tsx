@@ -5,11 +5,12 @@ import ContentLeft from './ContentLeft/ContentLeft'
 import ContentRight from './ContentRight/ContentRight'
 import Review from './Review/Review'
 import styles from './header.module.scss'
+import clsx from 'clsx'
 
 const Header: React.FC = (): JSX.Element => {
     return (
         <div className={styles.headerWrap}>
-            <div className={styles.container}>
+            <div className={clsx(styles.container, 'container')}>
                 <header className={styles.headerNav}>
                     <section className={styles.logo}>
                         <Logo />

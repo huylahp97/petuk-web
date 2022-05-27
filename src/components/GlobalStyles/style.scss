@@ -34,7 +34,24 @@ a:any-link {
     color: variables.$whiteColor;
 }
 
-h4 {
-    color: variables.$primaryColor;
-    font-size: 2rem;
+.wrap {
+    padding-top: 7rem;
+
+    h4 {
+        color: variables.$primaryColor;
+        font-size: 2.8rem;
+        line-height: 3rem;
+    }
+}
+
+.container {
+    width: variables.$containerWidthLg;
+    margin: 0 auto;
+}
+
+.underline {
+    width: 3.5rem;
+    height: .7rem;
+    background: variables.$primaryLinearColor;
+    border-radius: .3rem;
 }
