@@ -52,3 +52,23 @@
         transform: translateY(-2rem);
     }
 }
+
+@media screen and (max-width: 1059px) {
+    .imgWrap {
+        .bubbleTalk {
+            &::before {
+                bottom: -4rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 869px) {
+    .imgWrap {
+        .bubbleTalk {
+            &::before {
+                bottom: -4.5rem;
+            }
+        }
+    }
+}

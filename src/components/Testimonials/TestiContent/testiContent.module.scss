@@ -1,0 +1,65 @@
+@use '../../GlobalStyles/variables';
+
+$imgWidth: 10rem;
+
+.testiContentWrap {
+    width: 100%;
+    min-width: 70rem;
+    padding: 7rem 8rem 0;
+    position: relative;
+}
+
+.itemWrap {
+    height: 26rem;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background: variables.$itemColor;
+    margin-right: 1rem;
+    border-radius: 5rem;
+    border: .1rem solid variables.$bgColorAlt;
+
+    article {
+        padding: 0 8rem;
+        display: flex;
+        
+    }
+}
+
+.imgWrap {
+    border-radius: 50%;
+    overflow: hidden;
+    min-width: $imgWidth;
+    max-width: $imgWidth;
+    max-height: $imgWidth;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 100%;
+    }
+}
+
+.commentWrap {
+    padding-left: 3rem;
+}
+
+.comment {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 300;
+}
+
+.info {
+    padding-top: 4rem;
+    h6 {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: variables.$primaryColor
+    }
+    p {
+        font-weight: 300;
+    }
+}

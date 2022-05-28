@@ -1,0 +1,27 @@
+@use '../../GlobalStyles/variables';
+
+.policyWrap {
+    margin-top: 5rem;
+    border-top: .1rem solid variables.$itemColor;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    article {
+        font-size: 1.5rem;
+        display: flex;
+        
+        
+        span {
+            color: variables.$primaryColor;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.policyLink {
+    gap: 2rem;
+}

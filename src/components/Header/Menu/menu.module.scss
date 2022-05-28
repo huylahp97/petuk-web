@@ -44,8 +44,9 @@
         border-radius: 0.4rem;
         display: flex;
         align-items: center;
+        opacity: 0.9;
         &:hover {
-            opacity: 0.9;
+            opacity: 1;
             color: variables.$blackColor;
         }
 
@@ -54,8 +55,6 @@
             margin-left: .6rem;
             align-items: center;
         }
-
-        
     }
 }
 

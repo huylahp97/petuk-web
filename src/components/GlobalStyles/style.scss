@@ -35,7 +35,7 @@ a:any-link {
 }
 
 .wrap {
-    padding-top: 7rem;
+    padding: 7rem 0;
 
     h4 {
         color: variables.$primaryColor;
@@ -54,4 +54,17 @@ a:any-link {
     height: .7rem;
     background: variables.$primaryLinearColor;
     border-radius: .3rem;
+}
+
+@media screen and (max-width: 1059px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+
+@media screen and (max-width: 870px) {
+    html {
+        font-size: 45%;
+    }
 }

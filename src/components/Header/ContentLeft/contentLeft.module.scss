@@ -38,9 +38,10 @@
         background-color: variables.$bgColorAlt;
         border-radius: 5rem;
         cursor: pointer;
+        opacity: 0.8;
 
         &:hover {
-            opacity: 0.9;
+            opacity: 1;
         }
 
         i {
@@ -54,10 +55,6 @@
             box-shadow: 0 0 1rem 0.3rem variables.$bgColorAlt;
             filter: blur(0.06rem)
         }
-
-
-
-
     }
     
     .primaryBtn {

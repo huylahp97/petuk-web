@@ -48,7 +48,7 @@ const BenefitsContent: React.FC = (): JSX.Element => {
             </article>
             <article className={styles.benefitsList}>
                 {list.map(item => (
-                    <div className={styles.benefitsItem}>
+                    <div key={item.id} className={styles.benefitsItem}>
                         <div className={styles.itemImg}>
                             <img src={item.img} alt={item.name} />
                         </div>

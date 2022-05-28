@@ -1,0 +1,17 @@
+@use '../../GlobalStyles/variables';
+
+$bulletWidth: 1.5rem;
+
+
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    background: #fff;
+    opacity: 0.6;
+    width: $bulletWidth;
+    height: $bulletWidth;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet-active {
+    background: variables.$primaryColor;
+    opacity: 1;
+}

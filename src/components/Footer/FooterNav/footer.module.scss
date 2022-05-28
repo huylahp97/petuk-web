@@ -1,0 +1,29 @@
+@use '../../GlobalStyles/variables';
+
+.footerNavWrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: end;
+
+    article {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30%;
+
+        h6 {
+            margin-right: auto;
+            font-size: 1.6rem;
+        }
+        ul {
+            margin-top: 1rem;
+            a {
+                font-size: 1.5rem;
+                font-weight: 300;
+                line-height: 2.5rem;
+                &:hover {
+                    color: variables.$primaryColor
+                }
+            }
+        }
+    }
+}

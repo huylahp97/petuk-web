@@ -1,0 +1,78 @@
+@use '../../GlobalStyles/variables';
+
+$itemWidth: 28rem;
+
+.menuWrap {
+    margin-top: 7rem;
+}
+
+.itemWrap {
+    border-radius: 3rem;
+    background: variables.$primaryLinearColor;
+    max-width: $itemWidth;
+    min-width: 25rem;
+    width: 100%;
+    height: 33rem;
+    user-select: none;
+}
+
+.itemImg {
+    border-radius: 3rem 3rem 0 0;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.infoWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.itemInfo {
+    text-align: center;
+    h5 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        font-weight: 600;
+    }
+    p {
+        padding-top: .5rem;
+        font-size: 2rem;
+        font-weight: 500;
+        
+        span {
+            font-size: 1rem;
+        }
+    }
+}
+
+.itemBtn {
+    margin-top: 2rem;
+
+    a {
+        padding: 1rem 4rem;
+        background: linear-gradient(90deg, #A177B6 0%, #53067A 94.25%);
+        border-radius: 2rem;
+        color: variables.$whiteColor;
+        display: flex;
+        align-items: center;
+        font-size: 1.1rem;
+
+        i {
+            display: flex;
+            align-items: center;
+            padding-left: .5rem;
+            font-size: 1.3rem;
+        }
+    }
+}
+

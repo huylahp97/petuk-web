@@ -1,0 +1,25 @@
+@use '../../GlobalStyles/variables';
+
+
+.swiper-wrapper {
+    padding-bottom: 6rem;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: variables.$itemColor;
+    &::after {
+        font-size: 7rem;
+        font-weight: 600;
+    }
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    background: #fff;
+    opacity: 0.6;
+
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet-active {
+    background: variables.$whiteColor;
+    opacity: 1;
+}

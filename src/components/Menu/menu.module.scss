@@ -1,0 +1,30 @@
+.menuWrap {
+    background: linear-gradient(100.24deg, #A177B6 -64.67%, #53067A 87.6%);
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url(../../assets/images/benefits/pattern.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 0;
+    }
+}
+
+
+
+.titleUnderline {
+    margin-top: 1rem;
+}
+
+.description {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
